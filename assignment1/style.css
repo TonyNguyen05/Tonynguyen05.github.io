@@ -28,9 +28,15 @@ body{
         text-align: center;
         padding-top: 30px;
     }
-    .lunilink{
-        color:gold;
-        /* i attache the link at the beginning so that view can follow it and understand */
+
+    a:link{
+        color: rgb(123, 220, 20);
+    }
+    a:visited{
+        color: deeppink;
+    }
+    a:hover{
+        color: gold;
     }
     .name {
         text-align: center;
