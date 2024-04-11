@@ -1,0 +1,199 @@
+body{
+    background-image: url(images/bg3-100.jpg);
+    /* background-size: cover; */
+    background-attachment: fixed;
+    /* i choose the high constrat color pallete of purple for background and yellow and aliceblue for the text */
+    /* the background is made in Adobe Illustrator */
+    }
+    
+    header{
+        color:#ffdead;
+        text-align: inherit≈;
+    }
+    .head1{
+        margin-top: 10px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .head2{
+        font-size: 50px;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        outline: none;
+    }
+    nav {
+        color: aliceblue;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .lunilink{
+        color:gold;
+        /* i attache the link at the beginning so that view can follow it and understand */
+    }
+    .name {
+        text-align: center;
+        color: aliceblue;
+        font-size: 15px;
+    
+    }
+    
+    .container{
+        color: aliceblue;
+        font-size: 20px;
+        padding-top: 50px;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    .questions{
+        font-size: 35px;
+    }
+    
+    .first{
+        padding-right: 600px;
+    }
+    .image1{
+        height: 270px;
+        width: 480px;
+        border-radius: 20px;
+        border-style: solid;
+        border-color: black;
+        border-block-start-width: 5px;
+        border-block-end-width: 5px;
+        display: block;
+        float: right;
+    }
+    
+    .number1{
+        display: inline-block;
+        padding-top: 100px;
+    }
+    
+    .number2{
+        row-gap: 20px;
+        grid-row: span;
+        padding-top: 50px;
+    }
+    
+    .actlist{
+        margin: 20px 0px;
+        border-style: none;
+        border-collapse:collapse;
+    }
+    
+    .actlist td{
+        width: 18vw;
+        vertical-align: top;
+        padding: 0em 2em;
+        border-inline: solid white;
+        text-align:left;
+        
+    }
+    
+    .actlist .nosideborder{
+        border-inline-style: none;
+    }
+    
+    .omada{
+        height: 134.1px;
+        width:  108.4px;
+    }
+    .spark{
+        height: 134.1px;
+        width:  108.4px;
+    }
+    .kitchenlab{
+        height: 134.1px;
+        width:  108.4px;
+    }
+    .coach {
+        height: 134.1px;
+        width:  108.4px;
+    }
+    .number3{
+        padding-top: 100px;
+    }
+    
+    .number4{
+        padding-top: 100px;
+    }
+    
+    .number5{
+        padding-top: 100px;
+    }
+    
+    .number6{
+        padding-top: 100px;
+    }
+    
+    .number7{
+        padding-top: 100px;
+    }
+    
+    .number8{
+        padding-top: 100px;
+    }
+    
+    .number9{
+        padding-top: 100px;
+    }
+    
+    .number10{
+        padding-top: 100px;
+    }
+    .tablecap{
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-bottom: 30px;
+    }
+    .lesson{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+    .number11{
+        padding-top: 100px;
+    }
+    
+    
+    .pro{
+        border-style: outset;
+        border-color: lawngreen;
+        border-width: 10px;
+        border-radius: 10px;
+        padding: 20px;
+    
+    }
+    .con{
+        border-style: outset;
+        border-color:crimson;
+        border-width: 10px;
+        border-radius: 10px;
+        padding: 20px;
+        vertical-align: top;
+    }
+    
+    .lasttable{
+        border-spacing: 100px 30px ;
+    }
+    
+    
+    .footbox{
+        margin-top: 300px;
+        height: 50px;
+        margin-bottom: 50px;
+    
+    }
+    
+    .lastword{
+        font-size: 40px;
+        text-align: center;
+        color: rgb(231, 229, 229);
+        border-style: dashed;
+        border-top: 10px;
+        border-bottom: 10px;
+        border-color: aliceblue;
+    
+    }
