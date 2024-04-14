@@ -9,6 +9,8 @@ body{
     header{
         color:#ffdead;
         text-align: inherit≈;
+        text-shadow: 0px 0px 10px gold;
+        /* the headings should stand out so i make text shadow which looks like a glow effect */
     }
     .head1{
         margin-top: 10px;
@@ -38,6 +40,7 @@ body{
     a:hover{
         color: gold;
     }
+     /* i add some effects on the link in order to emphasize the author who is the developer of the website */
     .name {
         text-align: center;
         color: aliceblue;
@@ -52,8 +55,17 @@ body{
         padding-left: 70px;
         padding-right: 70px;
     }
+
+    .seperate{
+        border-bottom: 2px solid black;
+        padding: 100px;
+    }
+
     .questions{
         font-size: 35px;
+        text-shadow: 0px 0px 5px aliceblue;
+        /* the questions also need to be recognizable like a title */
+    
     }
     
     .first{
@@ -69,17 +81,16 @@ body{
         border-block-end-width: 5px;
         display: block;
         float: right;
+        box-shadow: 0px 0px 10px white;
     }
-    
     .number1{
         display: inline-block;
         padding-top: 100px;
     }
     
     .number2{
-        row-gap: 20px;
+        row-gap: 50px;
         grid-row: span;
-        padding-top: 50px;
     }
     
     .actlist{
@@ -94,76 +105,142 @@ body{
         padding: 0em 2em;
         border-inline: solid white;
         text-align:left;
-        
+    }
+    .actlist td img{
+        height: 120px;
     }
     
     .actlist .nosideborder{
         border-inline-style: none;
     }
-    
+    /* I place the images in each column to demonstrate the content inside by wraping the image so that the test will be readable. */
     .omada{
-        height: 134.1px;
-        width:  108.4px;
+        display: flex;
+        word-wrap: normal;
+        float: right;
+        vertical-align: top;
     }
     .spark{
-        height: 134.1px;
-        width:  108.4px;
+        display: flex;
+        word-wrap: normal;
+        float: left;
+        vertical-align: bottom;
+        margin: 5px;
     }
     .kitchenlab{
-        height: 134.1px;
-        width:  108.4px;
+        display: flex;
+        word-wrap: normal;
+        float: left;
+        vertical-align: top;
     }
     .coach {
-        height: 134.1px;
-        width:  108.4px;
+        display: flex;
+        word-wrap: normal;
+        float: right;
+        vertical-align: top;
+        margin: 5px;
     }
+    .gridone{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 2rem
+    }
+ /* the reason why i choose this color pallete for the boxes in the grid is that is matches the background color and the theme */
+ /* The color of the border is darker than the background inside to highlight the content */
     .number3{
-        padding-top: 100px;
+        grid-column: 1/3;
+        grid-row: 1/2;
+        background-color: #1C1678;
+        border-radius: 40px;
+        border: 10px solid #050046;
+        padding: 20px;
     }
     
     .number4{
-        padding-top: 100px;
+        grid-column: 3/4;
+        grid-row: 1/3;
+        background-color: #7BC9FF;
+        border-radius: 40px;
+        border: 10px solid #3caeff ;
+        color: black;
+        padding: 20px;
     }
     
     .number5{
-        padding-top: 100px;
+        grid-column: 1/3;
+        grid-row: 2/3;
+        background-color: #8576FF;
+        border-radius: 40px;
+        border: 10px solid #6551ff;
+        padding: 20px;
     }
     
     .number6{
-        padding-top: 100px;
+        grid-column: 1/4;
+        grid-row: 3/4;
+        background-color: #A3FFD6;
+        border-radius: 40px;
+        border: 10px solid #79ffc3;
+        color: black;
+        padding: 20px;
     }
-    
+    .queston46{
+        text-shadow: 0px 0px 10px black;
+        font-size: 35px;
+    }
+    /* For the colors with high brightness, i set the test into black to make it easier to read  */
+    .gridtwo{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 2rem
+    }
+    .imgfor78{
+        height: 300px;
+        border-radius: 40px;
+        border: 10px solid black;
+    }
+    /* The border outside makes the images seperated from the background  */
     .number7{
-        padding-top: 100px;
+        grid-column: 2/3;
+        grid-row: 1/2;
     }
     
     .number8{
-        padding-top: 100px;
+        grid-column: 1/2;
+        grid-row: 2/3;
     }
     
-    .number9{
-        padding-top: 100px;
-    }
-    
-    .number10{
-        padding-top: 100px;
-    }
     .tablecap{
         font-size: 30px;
         font-weight: bold;
         text-transform: uppercase;
         padding-bottom: 30px;
+        text-shadow: 0px 0px 5px aliceblue;
     }
     .lesson{
         padding-left: 100px;
         padding-right: 100px;
     }
     
-    .number11{
-        padding-top: 100px;
+    
+    
+    .achievetable{
+        border-style:dashed;
+        border-width: 5px;
+        border-color: gold;
+        padding: 30px;
     }
     
-    
+    .thead{
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    /* The color of the border stand for the content of the box (red for cons and green for pros) */
     .pro{
         border-style: outset;
         border-color: lawngreen;
@@ -184,6 +261,10 @@ body{
     .lasttable{
         border-spacing: 100px 30px ;
     }
+    .seperate11{
+        border-style: none;
+        padding-top: 100px;
+    }
     
     
     .footbox{
@@ -192,14 +273,11 @@ body{
         margin-bottom: 50px;
     
     }
-    
+    /* i set a large margin for the footer so that readers will not face the end too surprisingly but scroll all the way down */
     .lastword{
         font-size: 40px;
         text-align: center;
         color: rgb(231, 229, 229);
         border-style: dashed;
-        border-top: 10px;
-        border-bottom: 10px;
-        border-color: aliceblue;
     
     }
