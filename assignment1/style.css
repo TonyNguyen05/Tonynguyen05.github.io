@@ -4,8 +4,11 @@ body{
     background-attachment: fixed;
     /* i choose the high constrat color pallete of purple for background and yellow and aliceblue for the text */
     /* the background is made in Adobe Illustrator */
+    font-family: "Nunito", sans-serif;
+    font-weight: Bold 700;
+    /* i use this font as it is not solemn as others with serif */
     }
-    
+   
     header{
         color:#ffdead;
         text-align: inherit≈;
@@ -278,6 +281,6 @@ body{
         font-size: 40px;
         text-align: center;
         color: rgb(231, 229, 229);
-        border-style: dashed;
+       
     
     }
