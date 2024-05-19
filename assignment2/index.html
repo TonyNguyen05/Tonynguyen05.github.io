@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Music Album</title>
+    <link rel="icon" type="image/png" href="image/tdes reduce logo.png"> 
+    <!-- i would prefer the default font as it brings the feeling of elegance and basically i find it match the theme -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+   
+    <header>
+        <!--The logo was made in Ilustrator with the CCUItimatumForce Font which I find in it the old-school vibe but also modernand really fit to make an album -->
+         <img id="mainlogo" src="image/THEMUSICALBULM.png" alt="logo">
+    </header>
+
+    <nav>
+        <!-- i planned to do more with the navigations but i could not manage my time for this so the result can only deliver the layout but has no functioon -->
+        <a href="#"> About</a>
+        <a href="#">Music</a>
+        <a href="#">Playist</a>
+        <a href="#">Home</a>
+
+    </nav>
+   
+    <main class="container">
+
+        <div class="song-list">
+            <!-- I want to put the list on the top so that people can reach any songs in th album at first -->
+            
+            <div class="song1">
+                <img id="song1-img" src="cover/Hes.png" alt="Hes">
+            </div>
+            
+            <div class="song2">
+                        <img id="song2-img" src="cover/Dry Down ft. Ben Snaath.png" alt="Dry-down-ft.BenSnaath" />
+            </div>
+            <!-- i chose the image of headphones and microphone since this is the only lyrical audio piece in the albulm -->
+
+            <div class="song3">
+                        <img id="song3-img" src="cover/Leapt.png" alt="Leapt" />
+            </div>
+            <!-- the song3 has a gloomy and "not to give a damn" vibe so that the cover for this is a back view of a man lonely in a bar -->
+
+            <div class="song4">
+                        <img id="song4-img" src="cover/Water Feature.png" alt="Water-feature" />
+            </div>
+            <!-- the fourth sound is added alot of reverb which creates the vibe of the ocean so i find the cover partly match the theme as it is also looked mysterious with ancient patterns and a blue eye -->
+            
+        </div>
+        
+        <div class="container1">
+            <!-- i intendedly made the media player as a gardet like an ipod so that people can easily figure out the function of the website. The process of making the cover is choosing the right ones on pexel and make them into the disks by making a hole in each of them in Adobe Illustrator and Photoshop -->
+            
+            <audio src="music/Hes.mp3" id="audio1"></audio>
+        
+            <div class="img1container">
+                 <img id="cover1" class="disk" src="cover/Hes.png" alt="song1cover">
+            </div>
+
+            <div class="properties">
+                
+                <h1 class="title1" id="title1"></h1>
+                <span id="audio-time"></span>
+                
+                <div class="navigation1">
+                     <button class="actionbutton" onclick="prevSong()">
+                        <img 
+                        src="image/prev button.png" 
+                        alt="prevbutton" 
+                        id="prev-button"
+                        height="24"
+                        width="24"
+                        >
+                     </button>
+                     
+                     <button class="actionbutton" id="actionbutton">
+                        <img 
+                        src="image/play-button-arrowhead.png" 
+                        src="image/pause (1).png"
+                        alt="playpausebutton" 
+                        id="play-pause-button"
+                        height="30"
+                        width="30">
+                     </button>
+                    
+                     <button class="actionbutton" onclick="nextSong()">
+                        <img 
+                        src="image/next button.png" 
+                        alt="nextbutton" 
+                        id="next-button"
+                        height="24"
+                        width="24"
+                        >
+                     </button>
+                     <!-- i prefer the icons that are chosen on hte flaticon website. I also change the color in Photoshop -->
+                </div>
+
+                <div class="progress-container1">
+                    <input type="range" value="0" id="progress1">
+                </div>
+            </div>
+            <!-- i made the function and the interface irreducible so that it can be familiar to a wide range of ages of users  -->
+
+        </div>
+        
+    </main>  
+
+
+
+</body>
+</html>
