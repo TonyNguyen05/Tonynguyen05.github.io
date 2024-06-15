@@ -1,0 +1,162 @@
+body {
+    background-color: #1a120b;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    max-width: 1000px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #e5e5cb;
+    /* color: #3c2a21; */
+    font-size: 1.1rem;
+    gap: 1.5rem;
+  }
+  
+  .outer {
+    border: 2px dashed #e5e5cb7a;
+    width: 400px;
+    min-height: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    opacity: 1;
+    /* background-color: cornsilk; */
+    transition: opacity 0.5s ease, transform 0.5s ease, background-color 0.5s ease;
+  }
+
+  button{
+    padding: 20px;
+    font-size: 2rem;
+    background-color: cornflowerblue;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+    transition: scale 0.4 ease;
+    transition: rotate 0.4 ease;
+  }
+
+  button:hover{
+    background-color: rgb(36, 70, 133);
+    scale: 0.8;
+    rotate: 10deg;
+  }
+
+  input{
+    padding: 10px;
+    border: 6px solid lime;
+    border-radius: 15px;
+    transition: boder-color 0.5s linear;
+  }
+
+  input:hover{
+    border-color: crimson;
+  }
+
+  .fill-icon{
+    cursor: pointer;
+    transition: fill 0.5 linear;
+  }
+
+  .fill-icon:hover{
+    fill: blue;
+  }
+
+  .duck-icon{
+    /* transition: scale 0.5s linear; */
+    /* transition: translate 0.7s ease; */
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  .duck-icon:hover{
+    /* translate: 0px -20px; */
+    /* scale:1.2; */
+  }
+
+  @keyframes bounce{
+    0%{
+        translate:0px 0px;
+    }
+    50%{
+        translate:0px -40px;
+    }
+    100%{
+        translate:0px 0px;
+    }
+  }
+
+.box{
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    animation-name: color-switch;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes color-switch{
+    0%{
+        border-color: purple;
+    }
+    20%{
+        border-color: lime;
+    }
+    40%{
+        border-color: yellow;
+    }
+    60%{
+        border-color: blue;
+    }
+    80%{
+        border-color: crimson;
+    }
+    100%{
+        border-color: purple;
+    }
+}
+
+.spinner{
+    width: 120px;
+    height: 120px;
+    /* background-color: cornsilk; */
+    border: 6px solid cornsilk;
+    animation-name: loading;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-top-color: crimson;
+    border-radius: 50%;
+}
+
+@keyframes loading{
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+
+.heart-icon{
+    animation: heartneat 2s linear infinite;
+}
+
+@keyframes heartbeat{
+    0%{
+        scale:1;
+    }
+    50%{
+        scale:0.7;
+    }
+    100%{
+        scale:1;
+    }
+}

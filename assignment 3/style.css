@@ -1,0 +1,63 @@
+body{
+    background-color: black;
+    margin: 0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+    background-color: rgb(42, 42, 42);
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+#logo{
+    height: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    padding: 10px;
+    flex-direction: column;
+}
+
+#count-number, #time, #count-record{
+    padding: 5px;
+}
+
+#click-count{
+    font-size: 20px;
+}
+
+#time{
+    font-size: 50px;
+}
+
+#circle{
+    border-radius: 50%;
+    background-color: aliceblue;
+    height: 120px;
+    width: 120px;
+    position:absolute;
+    cursor: pointer;
+}
+
+#start-btn{
+    background-color: none;
+}
+
+#btn-img{
+    height: 50px;
+}
+
+#game-zone{
+    width: 90vw;
+    height: 32vw;
+    position: relative;
+    overflow: hidden;
+}
